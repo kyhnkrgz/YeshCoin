@@ -1,121 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YESHCOIN - Official Token Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            margin: 0; padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0f0f0f;
-            color: white;
-        }
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        #particles {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            z-index: 0;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        .hero img {
-            max-width: 220px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-top: 20px;
-            color: #00e6e6;
-        }
-        .hero h2 {
-            font-size: 1.2rem;
-            font-weight: 300;
-            color: #bbb;
-            margin-top: 10px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #ffcc00;
-            color: black;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .btn:hover {
-            background: #e6b800;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YESHCOIN - Where Value Meets Trust</title>
+  <meta name="description" content="YESHCOIN - The future of digital value. View roadmap, tokenomics, and more.">
+  <meta property="og:title" content="YESHCOIN - Where Value Meets Trust">
+  <meta property="og:description" content="YESHCOIN is a community-driven crypto project focused on transparency and utility.">
+  <meta property="og:image" content="https://github.com/kyhnkrgz/YeshCoin/blob/main/yeshcoin.png?raw=true">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; background: #0f0f0f; color: white; line-height: 1.6; }
+    h2 { color: #ffcc00; text-align: center; margin-bottom: 20px; }
+    .btn { display: inline-block; padding: 12px 25px; background: #ffcc00; color: black; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+    .btn:hover { background: #e6b800; }
+
+    .hero { position: relative; height: 100vh; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    #particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+    .hero-content { position: relative; z-index: 1; }
+    .hero img { width: 300px; animation: logoZoom 2.5s ease forwards; }
+    @keyframes logoZoom { from { transform: scale(0.67); opacity: 0.5; } to { transform: scale(1.5); opacity: 1; } }
+    .hero h1 { font-size: 3rem; margin-top: 20px; color: #ffcc00; }
+    .hero-buttons { margin-top: 20px; }
+    .hero-buttons a { margin: 0 10px; }
+
+    section { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    .about { text-align: center; }
+
+    table { width: 100%; border-collapse: collapse; color: white; }
+    th, td { border-bottom: 1px solid #333; padding: 10px; text-align: left; }
+
+    .roadmap { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+    .roadmap div { background: #1c1c1c; padding: 15px; border-radius: 8px; }
+    .roadmap strong { color: #ffcc00; display: block; margin-bottom: 10px; }
+
+    .social-links { text-align: center; margin-top: 30px; }
+    .social-links a { color: white; font-size: 1.5rem; margin: 0 10px; transition: color 0.3s; }
+    .social-links a:hover { color: #ffcc00; }
+
+    footer { text-align: center; padding: 20px; font-size: 0.9rem; background: #111; color: #aaa; }
+  </style>
 </head>
 <body>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <div class="hero">
-    <canvas id="particles"></canvas>
-    <div class="hero-content">
-        <img src="https://raw.githubusercontent.com/kyhnkrgz/YeshCoin/refs/heads/main/YESH.png" alt="YESHCOIN Logo">
-        <h1>YESHCOIN</h1>
-        <h2>Placeholder Slogan Here</h2>
-        <a href="#" class="btn">Download Whitepaper</a>
+  <canvas id="particles"></canvas>
+  <div class="hero-content">
+    <img src="https://github.com/kyhnkrgz/YeshCoin/blob/main/yeshcoin.png?raw=true" alt="YESHCOIN Logo">
+    <h1>Where Value Meets Trust</h1>
+    <div class="hero-buttons">
+      <a href="#" class="btn">Buy Now</a>
+      <a href="#" class="btn">View Chart</a>
+      <a href="/whitepaper.pdf" class="btn" target="_blank">Whitepaper</a>
+      <a href="https://bscscan.com/token/0x000000000000000000000000000000" class="btn" target="_blank">View on BscScan</a>
     </div>
+  </div>
 </div>
 
-<!-- Tokenomics Section -->
-<section style="max-width:900px;margin:auto;padding:40px 20px;">
-    <h2 style="color:#ffcc00;">Tokenomics</h2>
-    <table style="width:100%;border-collapse:collapse;color:white;">
-        <tr><th style="border-bottom:1px solid #333;padding:10px;text-align:left;">Total Supply</th><td style="border-bottom:1px solid #333;padding:10px;">1,000,000,000 YESH</td></tr>
-        <tr><th style="border-bottom:1px solid #333;padding:10px;text-align:left;">Liquidity</th><td style="border-bottom:1px solid #333;padding:10px;">25%</td></tr>
-        <tr><th style="border-bottom:1px solid #333;padding:10px;text-align:left;">Marketing</th><td style="border-bottom:1px solid #333;padding:10px;">15%</td></tr>
-        <tr><th style="border-bottom:1px solid #333;padding:10px;text-align:left;">Team</th><td style="border-bottom:1px solid #333;padding:10px;">10%</td></tr>
-        <tr><th style="border-bottom:1px solid #333;padding:10px;text-align:left;">Public Sale</th><td style="border-bottom:1px solid #333;padding:10px;">50%</td></tr>
-        <tr><th style="border-bottom:1px solid #333;padding:10px;text-align:left;">Contract Address</th><td style="border-bottom:1px solid #333;padding:10px;">0x000000000000000000000000000000</td></tr>
-    </table>
+<!-- About -->
+<section class="about">
+  <h2>About YESHCOIN</h2>
+  <p>YESHCOIN is a next-generation digital asset designed to combine value and trust. With a clear roadmap, strong community, and transparent tokenomics, YESHCOIN aims to deliver sustainable growth and real-world utility.</p>
 </section>
 
-<!-- Roadmap Section -->
-<section style="max-width:900px;margin:auto;padding:40px 20px;">
-    <h2 style="color:#ffcc00;">Roadmap</h2>
-    <ul>
-        <li>Q1 2025 - Token Launch</li>
-        <li>Q2 2025 - DEX Listing</li>
-        <li>Q3 2025 - Marketing Campaign</li>
-        <li>Q4 2025 - CEX Listing</li>
-    </ul>
+<!-- Tokenomics -->
+<section>
+  <h2>Tokenomics</h2>
+  <table>
+    <tr><th>DEX Liquidity</th><td>5% - PancakeSwap pool, initial funding</td></tr>
+    <tr><th>CEX Listing</th><td>20% - Centralized exchange listing and trading pairs</td></tr>
+    <tr><th>Marketing</th><td>20% - Influencers, advertising, promotions</td></tr>
+    <tr><th>Community / Airdrop</th><td>5% - Rewards for early supporters</td></tr>
+    <tr><th>Team / Founder</th><td>15% - Locked founder allocation</td></tr>
+    <tr><th>Reserve / Development</th><td>35% - Future projects and strategic sales</td></tr>
+    <tr><th>Total Supply</th><td>1,000,000,000 YESH</td></tr>
+    <tr><th>Contract Address</th><td>0x000000000000000000000000000000</td></tr>
+  </table>
 </section>
 
-<!-- Social Links -->
-<div style="text-align:center;margin-top:30px;">
-    <a href="#" style="color:white;font-size:1.5rem;margin:0 10px;"><i class="fab fa-twitter"></i></a>
-    <a href="#" style="color:white;font-size:1.5rem;margin:0 10px;"><i class="fab fa-telegram"></i></a>
-    <a href="#" style="color:white;font-size:1.5rem;margin:0 10px;"><i class="fab fa-discord"></i></a>
+<!-- Roadmap -->
+<section>
+  <h2>Roadmap</h2>
+  <div class="roadmap">
+    <div>
+      <strong>Q4 2025</strong>
+      <ul>
+        <li>Token launch</li>
+        <li>Website goes live</li>
+        <li>Initial community building</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Q4 2025</strong>
+      <ul>
+        <li>PancakeSwap listing</li>
+        <li>First marketing campaign</li>
+        <li>Whitepaper release</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Q1 2026</strong>
+      <ul>
+        <li>Medium-scale influencer partnerships</li>
+        <li>Staking platform launch</li>
+        <li>First CEX application</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Q1 2026</strong>
+      <ul>
+        <li>CEX listing</li>
+        <li>Ecosystem expansion</li>
+        <li>New partnerships</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <h2>Frequently Asked Questions</h2>
+  <p><strong>What is YESHCOIN?</strong><br>YESHCOIN is a next-generation digital asset designed for real-world use and long-term value.</p>
+  <p><strong>Which wallets support YESHCOIN?</strong><br>Any BSC-compatible wallet such as MetaMask or Trust Wallet.</p>
+  <p><strong>Is YESHCOIN audited?</strong><br>The contract audit process is in progress and will be published publicly soon.</p>
+  <p><strong>What is the total supply?</strong><br>1,000,000,000 YESH (fixed total supply).</p>
+</section>
+
+<!-- Subscribe -->
+<section class="about" style="text-align:center;">
+  <h2>Stay Updated</h2>
+  <p>Get the latest news, airdrop alerts and product updates delivered to your inbox.</p>
+  <form onsubmit="subscribeEmail(event)">
+    <input type="email" id="emailInput" placeholder="Enter your email" required style="padding:10px; width:250px; border:none; border-radius:5px;">
+    <button type="submit" class="btn">Subscribe</button>
+  </form>
+  <p id="subscribeMessage" style="margin-top:10px;"></p>
+</section>
+
+<!-- Social -->
+<div class="social-links">
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-telegram"></i></a>
+  <a href="#"><i class="fab fa-discord"></i></a>
 </div>
 
-<footer style="text-align:center;padding:20px;font-size:0.9rem;background:#111;color:#aaa;">
-    &copy; 2025 YESHCOIN. All Rights Reserved.
+<!-- Footer -->
+<footer>
+  &copy; 2025 YESHCOIN. All Rights Reserved. | Contact: info@yeshcoin.com
 </footer>
 
-<!-- Particle Animation Script -->
+<!-- Particle Animation + Subscribe JS -->
 <script>
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
@@ -125,66 +161,73 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 window.addEventListener('resize', function(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    init();
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  init();
 });
 
 class Particle {
-    constructor(x, y, directionX, directionY, size, color){
-        this.x = x;
-        this.y = y;
-        this.directionX = directionX;
-        this.directionY = directionY;
-        this.size = size;
-        this.color = color;
-    }
-    draw(){
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-    }
-    update(){
-        if(this.x > canvas.width || this.x < 0){
-            this.directionX = -this.directionX;
-        }
-        if(this.y > canvas.height || this.y < 0){
-            this.directionY = -this.directionY;
-        }
-        this.x += this.directionX;
-        this.y += this.directionY;
-        this.draw();
-    }
+  constructor(x, y, directionX, directionY, size, color){
+    this.x = x; this.y = y;
+    this.directionX = directionX; this.directionY = directionY;
+    this.size = size; this.color = color;
+  }
+  draw(){
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  }
+  update(){
+    if(this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+    if(this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+    this.x += this.directionX;
+    this.y += this.directionY;
+    this.draw();
+  }
 }
 
 function init(){
-    particlesArray = [];
-    let numberOfParticles = (canvas.height * canvas.width) / 9000;
-    for(let i = 0; i < numberOfParticles; i++){
-        let size = Math.random() * 2 + 1;
-        let x = Math.random() * (innerWidth - size * 2);
-        let y = Math.random() * (innerHeight - size * 2);
-        let directionX = (Math.random() * 0.4) - 0.2;
-        let directionY = (Math.random() * 0.4) - 0.2;
-        let color = '#00e6e6';
-        particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
-    }
+  particlesArray = [];
+  let numberOfParticles = (canvas.height * canvas.width) / 9000;
+  for(let i = 0; i < numberOfParticles; i++){
+    let size = Math.random() * 2 + 1;
+    let x = Math.random() * (innerWidth - size * 2);
+    let y = Math.random() * (innerHeight - size * 2);
+    let directionX = (Math.random() * 0.4) - 0.2;
+    let directionY = (Math.random() * 0.4) - 0.2;
+    let color = '#00e6e6';
+    particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+  }
 }
 
 function animate(){
-    requestAnimationFrame(animate);
-    ctx.clearRect(0, 0, innerWidth, innerHeight);
-    for(let i = 0; i < particlesArray.length; i++){
-        particlesArray[i].update();
-    }
+  requestAnimationFrame(animate);
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  for(let i = 0; i < particlesArray.length; i++){
+    particlesArray[i].update();
+  }
 }
 
 init();
 animate();
+
+// Email subscribe simulation
+function subscribeEmail(event) {
+  event.preventDefault();
+  const email = document.getElementById("emailInput").value;
+  const messageBox = document.getElementById("subscribeMessage");
+
+  if (email.includes('@')) {
+    messageBox.style.color = "#00e6e6";
+    messageBox.textContent = "Thanks for subscribing! Stay tuned 🚀";
+    document.getElementById("emailInput").value = "";
+  } else {
+    messageBox.style.color = "red";
+    messageBox.textContent = "Please enter a valid email.";
+  }
+}
 </script>
 
 </body>
 </html>
-
-
